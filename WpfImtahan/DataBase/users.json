@@ -1,0 +1,63 @@
+[
+  {
+    "UserName": "Rubail",
+    "Surname": "Rehmanli",
+    "City": "Qebele",
+    "Phone": "0702135777",
+    "Email": "rubailrehmanli95@gmail.com",
+    "Birthday": "28",
+    "Password": "Rehmanli1470",
+    "UserCar": [
+      {
+        "Model": "Hyundai Elantra",
+        "Marka": "Hyundai",
+        "ImagePath": "\\..\\Images\\Hundai1.jpeg",
+        "Year": "2019",
+        "Money": "22000 Azn"
+      },
+      {
+        "Model": "M3",
+        "Marka": "BMW",
+        "ImagePath": "\\Images\\Bmw2.jpeg",
+        "Year": "2023",
+        "Money": "90000"
+      }
+    ]
+  },
+  {
+    "UserName": "Haci",
+    "Surname": "Hacili",
+    "City": "Qebele",
+    "Phone": "0702135777",
+    "Email": "rubailrehmanli95@gmail.com",
+    "Birthday": "28",
+    "Password": "Rehmanli1470",
+    "UserCar": [
+      {
+        "Model": "Hyundai Tucson",
+        "Marka": "Hyundai",
+        "ImagePath": "\\..\\Images\\Hundai2.jpeg",
+        "Year": "2019",
+        "Money": "22000 Azn"
+      }
+    ]
+  },
+  {
+    "UserName": "ss",
+    "Surname": "sefrefew",
+    "City": "ewftg",
+    "Phone": "wefg",
+    "Email": "isaaliyev1001@gmail.com",
+    "Birthday": "wqe",
+    "Password": "ewqr",
+    "UserCar": [
+      {
+        "Model": "er",
+        "Marka": "ere",
+        "ImagePath": "\\Images\\Bmw.jpeg",
+        "Year": "er",
+        "Money": "er"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+﻿<Page x:Class="WpfImtahan.Views.Pages.UserCarAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfImtahan.Views.Pages"
+      mc:Ignorable="d" 
+      Name="page"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UserCarAddPage">
+
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="\Images\Animasion1.jpg"/>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition  Height="6*"/>
+        </Grid.RowDefinitions>
+        <Button Margin="10,15,10,10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Command="{Binding UserShowBackCommand}" CommandParameter="{Binding ElementName=page}">
+            <Image Source="\Images\BackIcon.jpeg"/>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Text="Car Add" FontSize="40"  FontWeight="Bold">
+            <TextBlock.Foreground>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" >
+                    <GradientStop Color="Blue" Offset="0.1" />
+                    <GradientStop Color="Orange" Offset="0.25" />
+                    <GradientStop Color="Green" Offset="0.75" />
+                    <GradientStop Color="Cyan" Offset="1.0" />
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Button Margin="10,15,10,10" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Command="{Binding UserCarAddHomeCommand}" CommandParameter="{Binding ElementName=page}">
+            <Image Source="\Images\Home.png"/>
+        </Button>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <TextBlock Text="Model" Grid.Row="0" Margin="0,5" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding user.Model}" Name="ModelTb"  Grid.Column="1" Grid.Row="1" Padding="0,5" Width="270" BorderThickness="0,0,0,1" HorizontalAlignment="Left" />
+            <TextBlock Text="Marka" Grid.Row="2" Margin="0,5" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding user.Marka}" Name="MarkaTb" Grid.Column="1" Grid.Row="3" Padding="0,5" Width="270" BorderThickness="0,0,0,1" HorizontalAlignment="Left" />
+            <TextBlock Text="Year" Grid.Row="4" Margin="0,5" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding user.Year}" Name="YearTb" Grid.Column="1" Grid.Row="5" Padding="0,5" Width="270" BorderThickness="0,0,0,1" HorizontalAlignment="Left" />
+            <TextBlock Text="Money" Grid.Row="6" Margin="0,5" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding user.Money}" Name="MoneyTb" Grid.Column="1" Grid.Row="7" Padding="0,5" Width="270" BorderThickness="0,0,0,1" HorizontalAlignment="Left" />
+            
+        </StackPanel>
+        <Border VerticalAlignment="Bottom" HorizontalAlignment="Left" CornerRadius="25" Grid.Column="0" Margin="270,10,10,50" Grid.Row="14" Background="Cyan" Height="30" Width="70">
+            <Button Name="AddCarBtn" Height="25" Width="45" BorderThickness="0" Background="Cyan" Content="Add Car" FontWeight="Bold" FontSize="10" Command="{Binding CarAddCommand}" CommandParameter="{Binding ElementName=page}"/>
+        </Border>
+        <Border  VerticalAlignment="Bottom" HorizontalAlignment="Right" CornerRadius="25" Grid.Column="1" Margin="10,10,270,50" Grid.Row="14" Background="Cyan" Height="30" Width="70">
+            <Button Name="CancelBtn"  Height="25" Width="45" BorderThickness="0" Background="Cyan" Content="Cancel" FontWeight="Bold"  FontSize="10" Command="{Binding CancelCommand}" CommandParameter="{Binding ElementName=page}"/>
+        </Border>
+    </Grid>
+</Page>

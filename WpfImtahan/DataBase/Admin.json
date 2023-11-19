@@ -1,0 +1,99 @@
+{
+  "AdminName": "Rubail",
+  "Surname": "Rehmanli",
+  "Email": "rubailrehmanli95@gmail.com",
+  "Password": "Rehmanli1470",
+  "AdminCar": [
+    {
+      "Model": "BMW 5 Series",
+      "Marka": "BMW",
+      "ImagePath": "\\..\\Images\\Bmw.jpeg",
+      "Year": "2023",
+      "Money": "200000 Azn"
+    },
+    {
+      "Model": "Hyundai Elantra",
+      "Marka": "Hyundai",
+      "ImagePath": "\\..\\Images\\Hundai1.jpeg",
+      "Year": "2019",
+      "Money": "22000 Azn"
+    },
+    {
+      "Model": "Toyota Prado",
+      "Marka": "Toyota",
+      "ImagePath": "\\..\\Images\\Toyota2.jpeg",
+      "Year": "2021",
+      "Money": "25000 Azn"
+    },
+    {
+      "Model": "Mercedes-Benz E-Class",
+      "Marka": "Mercedes",
+      "ImagePath": "\\..\\Images\\Mersedes1.jpeg",
+      "Year": "2018",
+      "Money": "35000 Azn"
+    },
+    {
+      "Model": "BMW 3 Series",
+      "Marka": "BMW",
+      "ImagePath": "\\..\\Images\\Bmw2.jpeg",
+      "Year": "2017",
+      "Money": "32000 Azn"
+    },
+    {
+      "Model": "Hyundai Sonata",
+      "Marka": "Hyundai",
+      "ImagePath": "\\..\\Images\\Hundai3.jpeg",
+      "Year": "2018",
+      "Money": "23000 Azn"
+    },
+    {
+      "Model": "Toyota Coupe",
+      "Marka": "Toyota",
+      "ImagePath": "\\..\\Images\\Toyota1.jpeg",
+      "Year": "2020",
+      "Money": "27000 Azn"
+    },
+    {
+      "Model": "Mercedes-Benz G-Class",
+      "Marka": "Mercedes",
+      "ImagePath": "\\..\\Images\\Mersedes2.jpeg",
+      "Year": "2019",
+      "Money": "29000 Azn"
+    },
+    {
+      "Model": "BMW 750",
+      "Marka": "BMW",
+      "ImagePath": "\\..\\Images\\Bmw1.jpeg",
+      "Year": "2022",
+      "Money": "45000 Azn"
+    },
+    {
+      "Model": "Hyundai Tucson",
+      "Marka": "Hyundai",
+      "ImagePath": "\\..\\Images\\Hundai2.jpeg",
+      "Year": "2021",
+      "Money": "26000 Azn"
+    },
+    {
+      "Model": "Toyota Tornado",
+      "Marka": "Toyota",
+      "ImagePath": "\\..\\Images\\Toyota3.jpeg",
+      "Year": "2019",
+      "Money": "32000 Azn"
+    },
+    {
+      "Model": "Mercedes-Benz GLE",
+      "Marka": "Mercedes",
+      "ImagePath": "\\..\\Images\\Mersedes3.jpeg",
+      "Year": "2020",
+      "Money": "42000 Azn"
+    },
+    {
+      "Model": "BMW 745",
+      "Marka": "BMW",
+      "ImagePath": "\\..\\Images\\Bmw.jpeg",
+      "Year": "2016",
+      "Money": "28000 Azn"
+    }
+  ]
+}

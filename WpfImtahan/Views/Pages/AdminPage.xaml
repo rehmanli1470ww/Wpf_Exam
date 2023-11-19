@@ -1,0 +1,121 @@
+﻿<Page x:Class="WpfImtahan.Views.Pages.AdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfImtahan.Views.Pages"
+      
+      mc:Ignorable="d" 
+      Name="page"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminPage">
+    <Border Width="300"
+ Height="400"
+ 
+ CornerRadius="6">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" >
+                <GradientStop Color="Blue" Offset="0.1" />
+                <GradientStop Color="Orange" Offset="0.25" />
+                <GradientStop Color="Green" Offset="0.75" />
+                <GradientStop Color="Red" Offset="1.0" />
+            </LinearGradientBrush>
+        </Border.Background>
+        
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="15"
+                   Direction ="-90" 
+                   RenderingBias ="Quality" 
+                   ShadowDepth ="2" 
+                   Color ="Gray" />
+        </Border.Effect>
+        <StackPanel Orientation="Vertical"
+         Margin="20">
+            <StackPanel Orientation="Horizontal" Margin="20">
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="40" Command="{Binding AdminBackCommand}" CommandParameter="{Binding ElementName=page}">
+                    <Image Source="\Images\BackIcon.jpeg"/>
+                </Button>
+
+                <TextBlock Text="Admin" 
+                    FontSize="25"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"
+                    Padding="10"
+                           Margin="15"
+                    />
+                <Button Margin="0,25" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Command="{Binding AdminPageHomeCommand}" CommandParameter="{Binding ElementName=page}">
+                    <Image Source="\Images\Home.png"/>
+                </Button>
+
+            </StackPanel>
+            
+            
+
+            <Grid VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Admin Name" 
+        Grid.Row="0"
+        Margin="0,15"
+        HorizontalAlignment="Left"/>
+                <TextBox  Grid.Column="1" Name="AdminNameTb"
+       Grid.Row="1"
+       Padding="0,5"
+       Width="255"
+       BorderThickness="0,0,0,1"
+       HorizontalAlignment="Left"
+       Text=""/>
+                <TextBlock Text="Password" 
+        Grid.Row="2"
+        Margin="0,15"
+        HorizontalAlignment="Left"/>
+                <TextBox Grid.Row="3" Name="AdminPasswordTb"
+           
+           Padding="0,5"                           
+           Width="255"
+           BorderThickness="0,0,0,1"
+           HorizontalAlignment="Left"/>
+            </Grid>
+
+            <Button x:Name="LoginBtn" 
+         Content="Login" 
+         Command="{Binding AdminLoginCommand}"
+         CommandParameter="{Binding ElementName=page}"
+         Foreground="Black"
+         Background="Cyan"
+         Margin="0,25"
+         Height="35"
+         Width="250">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="LoginBorder" Background="{TemplateBinding Background}"
+                                 CornerRadius="16">
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                               VerticalAlignment="Center"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="AliceBlue" TargetName="LoginBorder"  />
+                                            <Setter Property="TextBlock.Foreground" Value="Black"  TargetName="LoginBorder" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+          
+
+        </StackPanel>
+    </Border>
+
+</Page>
